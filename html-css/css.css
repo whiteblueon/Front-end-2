@@ -1,0 +1,67 @@
+二  CSS 指层叠样式表
+像素：px（相对的大小 不同设备像素大小不一样）
+
+注释：<!--   -->
+
+快捷键：div{div$}*4
+
+内联样式（在 HTML 元素内部）<div style=" "><div/> 内联样式（在 HTML 元素内部）拥有最高的优先权     缺点：代码重用性差， css html文件不分开。
+
+内部样式表（位于 <head> 标签内部）
+
+外部样式表
+
+css选择器：
+1 ID选择器： id是唯一的  id比class效率高一些 #id{}  快捷键：p#p1
+2 标签选择器： p{}  div{} a{}
+3 class选择器： 可以重复的 .class{}   快捷键：p.p1
+4 分组选择器： #p1，#p3{}
+5 后代选择器： #div2 div{}  子孙后代都被选中
+6 子代选择器： #div2>div{}   亲子代被选中 IE6有兼容性问题
+7 多类选择器： div.aa.bb{}
+8 伪类选择器： #div .li6:hover .sub-nav{} (这个例子的sub-nav应为li6的子元素)
+9 伪对象选择器：
+
+
+权重值：
+id：100
+class：10
+标签选择器（tag）：1
+伪类选择器：1
+！important > 内联 > id > class > tag
+比大小的时候先比权重值最大的选择器 一样大的话再比第二大的
+
+
+*****css盒模型
+w3c标准盒模型
+宽度=内容的宽度
+高度=内容的高度
+padding:5px 4px 3px 2px; （里面的像素按顺时针来： 上 右 下 左）
+border-style：solid 实心
+background: url(2.jpg) no-repeat right bottom; 图片位于右下角
+
+
+行级与块级元素： 
+    行级元素inline： 和行级元素在一行 span a
+                    不能设置宽高。宽高是元素内容撑开的。行级元素之间的小空白是有空格换行造成的。
+                    行级元素浮动脱离文档流之后可以设置宽高。
+    块级元素block：  自己在一行 div p h1~h6 ul ol li  
+                    可以设置宽高。而不设置宽高，宽是充满父元素的，高是内容撑开的。
+    display：inline；块级变行级元素。
+    display：block； 行级变块级元素。
+    display：inline-block；  既有行级元素特点，又有块级元素特点。 ----兼容性：IE8及以下不兼容
+
+
+浮动 float：
+    浮动元素脱离文档流 
+    浮动元素上不去一般是父元素宽度不够
+
+css reset(样式重置)
+    百度搜索normalize
+
+
+居中： 
+    文本居中：
+        水平居中：text-align: center;
+        垂直居中：设置行高，行高等于父元素高度。
+

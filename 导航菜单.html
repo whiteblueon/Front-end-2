@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* css reset */
+        a{
+            text-decoration: none;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* css reset结束 */
+        .nav{
+            width: 408px;
+            height: 50px;
+        }
+        .li{
+            list-style: none;
+            width: 100px;
+            height: 30px;
+            float: left;
+            margin: 1px;
+            line-height: 30px;
+            text-align: center;
+            background: #ff0000;
+        }
+        .li .li-item{
+            width: 100%;
+            height: 100%;
+            display: block;
+            color: #ffffff;
+    
+        }
+        .li .li-item:hover{
+            background: #00ff00;
+            color: #000;
+        }
+        .sub-nav{
+            background: #ffcc00;
+            display: none;
+        }
+        .li:hover .sub-nav{
+            display:block;
+        }
+    </style>
+</head>
+<body>
+    <ul class="nav">
+        <li class="li">
+            <a href="#" class="li-item">item1</a>
+            <ul class="sub-nav">
+                    <li class="nav-item"><a href="#">111111</a></li>
+                    <li class="nav-item"><a href="#">222222</a></li>
+                    <li class="nav-item"><a href="#">333333</a></li>
+                    <li class="nav-item"><a href="#">333333</a></li>
+            </ul>
+        </li>
+        <li class="li"><a href="#" class="li-item">item2</a></li>
+        <li class="li"><a href="#" class="li-item">item3</a></li>
+        <li class="li"><a href="#" class="li-item">item4</a></li>
+    </ul>
+</body>
+</html>
