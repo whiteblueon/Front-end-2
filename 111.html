@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .menu{
+            height: 30px;
+            width: 408px;
+        }
+        .item{
+            float: left;
+            margin: 1px;
+            width: 100px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            background: #f00;
+            
+        }
+        .item-a{
+            width: 100%;
+            height: 100%;display: block;
+            color: #ffffff
+        }
+        .item-a:hover{
+            background: #00ff00;
+            color: #000000;
+        }
+        .nav{
+            
+            display: none;
+            height: 30px;
+            width: 408px;
+        }
+        .nav-item{
+            float: left;
+            width: 102px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            background: #ffcc00;
+        }
+        .nav-item-a{
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        .item:hover .nav{
+            display: block;
+        }
+        .a-nav{
+            background: #0000ff;
+            display: none;
+        }
+        .a-nav-item{
+            /* float: left; */
+        }
+        .nav-item:hover .a-nav{
+            display:block;
+
+        }
+    </style>
+</head>
+<body>
+    <ul class="menu">
+        <li class="item">
+            <a href="#" class="item-a">list1</a>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-item-a">111111</a>
+                    <ul class="a-nav">
+                        <li class="a-nav-item">aaaaaa</li>
+                        <li class="a-nav-item">bbbbbb</li>
+                        <li class="a-nav-item">cccccc</li>
+                        <li class="a-nav-item">dddddd</li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-item-a">222222</a></li>
+                <li class="nav-item"><a href="#" class="nav-item-a">333333</a></li>
+                <li class="nav-item"><a href="#" class="nav-item-a">444444</a></li>
+            </ul>
+        </li>
+        <li class="item"><a href="#" class="item-a">list2</a>
+            <ul class="nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-item-a">111111</a>
+                        <ul class="a-nav">
+                            <li class="a-nav-item">aaaaaa</li>
+                            <li class="a-nav-item">bbbbbb</li>
+                            <li class="a-nav-item">cccccc</li>
+                            <li class="a-nav-item">dddddd</li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-item-a">222222</a></li>
+                    <li class="nav-item"><a href="#" class="nav-item-a">333333</a></li>
+                    <li class="nav-item"><a href="#" class="nav-item-a">444444</a></li>
+                </ul></li>
+        <li class="item"><a href="#" class="item-a">list3</a>
+            <ul class="nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-item-a">111111</a>
+                        <ul class="a-nav">
+                            <li class="a-nav-item">aaaaaa</li>
+                            <li class="a-nav-item">bbbbbb</li>
+                            <li class="a-nav-item">cccccc</li>
+                            <li class="a-nav-item">dddddd</li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-item-a">222222</a></li>
+                    <li class="nav-item"><a href="#" class="nav-item-a">333333</a></li>
+                    <li class="nav-item"><a href="#" class="nav-item-a">444444</a></li>
+                </ul></li>
+        <li class="item"><a href="#" class="item-a">list4</a>
+            <ul class="nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-item-a">111111</a>
+                        <ul class="a-nav">
+                            <li class="a-nav-item">aaaaaa</li>
+                            <li class="a-nav-item">bbbbbb</li>
+                            <li class="a-nav-item">cccccc</li>
+                            <li class="a-nav-item">dddddd</li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-item-a">222222</a></li>
+                    <li class="nav-item"><a href="#" class="nav-item-a">333333</a></li>
+                    <li class="nav-item"><a href="#" class="nav-item-a">444444</a></li>
+                </ul></li>
+    </ul>
+</body>
+</html>
