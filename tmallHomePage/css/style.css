@@ -22,9 +22,6 @@ body{
     background: #f2f2f2;
     height: 32px;
 }
-/* .sn-login-info{
-    width: 300px;
-} */
 .login-info-item{
     float: left;
     height: 32px;
@@ -45,7 +42,12 @@ body{
     float: left;
     height: 32px;
     line-height: 32px;
+    margin-left: 20px;
 }
 .sn-quick-a{
-    
+    color: #999;
+    font-size: 12px;
+}
+.sn-quick-a:hover{
+    color: #FF0036;
 }
