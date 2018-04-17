@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+img{
+    border: 0;
+}
+body{
+    background: #fff;
+}
+.wipper{
+    width: 1286px;
+    margin: 0 auto;
+}
+.site-nav{
+    background: #f2f2f2;
+    height: 32px;
+
+}
+.sn-quick-item{
+    float: left;
+    height: 32px;
+    line-height: 32px;
+    margin-right: 20px;
+}
+.sn-login{
+    color: #999;
+    font-size: 12px;
+}
+.sn-login:hover{
+    color: #FF0036;
+}
