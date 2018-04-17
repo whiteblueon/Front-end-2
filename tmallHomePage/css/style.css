@@ -18,6 +18,9 @@ body{
     width: 1286px;
     margin: 0 auto;
 }
+.sep{
+    border-left: 1px solid #cccccc
+}
 .site-nav{
     background: #f2f2f2;
     height: 32px;
@@ -37,6 +40,8 @@ body{
 }
 .sn-quick-menu{
     float: right;
+    height: 32px;
+    width: 500px;
 }
 .quick-menu-item{
     float: left;
