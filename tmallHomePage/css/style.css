@@ -19,7 +19,8 @@ body{
     margin: 0 auto;
 }
 .sep{
-    border-left: 1px solid #cccccc
+    border-left: 1px solid #FF0036;
+    float: left;
 }
 .site-nav{
     background: #f2f2f2;
@@ -41,13 +42,17 @@ body{
 .sn-quick-menu{
     float: right;
     height: 32px;
-    width: 600px;
+    width: 560px;
 }
 .quick-menu-item{
     float: left;
     height: 32px;
     line-height: 32px;
-    margin-left: 20px;
+    padding: 0;
+    text-align: center;
+    /* margin: 0; */
+    /* margin-left: 20px; */
+    width: 70px;
 }
 .sn-quick-a{
     color: #999;
@@ -60,3 +65,27 @@ body{
 .sn-quick-a:hover{
     color: #FF0036;
 }
+.menu-bd{
+    border: 1px solid #eee;
+    border-top: 0;
+    padding: 8px 10px;
+    display: none;
+    width: 90px;
+    clear: both;
+}
+.quick-menu-item:hover .menu-bd{
+    display: block;
+}
+.menu-bd-panel{
+    font-size: 13px;
+    height: 20px;
+    line-height: 20px;
+}
+.menu-bd-panel a{
+    color: #666
+}
+.menu-bd-panel a:hover{
+    color: #FF0036;
+    text-decoration: underline;
+}
+
