@@ -53,6 +53,11 @@ body{
     color: #999;
     font-size: 12px;
 }
+.cart-box{
+    font-size: 16px;
+    height: 32px;
+    color: #FF0036;
+}
 .sn-quick-a:hover{
     color: #FF0036;
 }
