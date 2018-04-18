@@ -41,7 +41,7 @@ body{
 .sn-quick-menu{
     float: right;
     height: 32px;
-    width: 500px;
+    width: 600px;
 }
 .quick-menu-item{
     float: left;
@@ -53,10 +53,9 @@ body{
     color: #999;
     font-size: 12px;
 }
-.cart-box{
-    font-size: 16px;
-    height: 32px;
+.iconfont{
     color: #FF0036;
+    font-size: 12px;
 }
 .sn-quick-a:hover{
     color: #FF0036;
