@@ -19,8 +19,10 @@ body{
     margin: 0 auto;
 }
 .sep{
-    border-left: 1px solid #FF0036;
+    height: 16px;
+    border: 0.1px solid #ccc;
     float: left;
+    margin-top: 9px;
 }
 .site-nav{
     background: #f2f2f2;
@@ -50,8 +52,6 @@ body{
     line-height: 32px;
     padding: 0;
     text-align: center;
-    /* margin: 0; */
-    /* margin-left: 20px; */
     width: 70px;
 }
 .sn-quick-a{
