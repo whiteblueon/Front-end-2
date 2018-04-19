@@ -107,8 +107,9 @@ body{
 .business-support{
     width: 140px;
     height: 170px;
-    /* display: none; */
+    display: none;
     /* 二级菜单 */
+    /* text-align: center;继承 */
 }
 .business-support-li{
     width: 140px;
@@ -132,8 +133,8 @@ body{
     /* margin: 0 auto; */
     clear: both;
     /* display: block; */
-    border-top: 1px dashed #ccc;
-    border-bottom: 1px dashed #ccc;
+    border-top: 1px dotted #ccc;
+    border-bottom: 1px dotted #ccc;
     height: 50px;
     width: 130px;
     margin: 0 5px;
@@ -149,7 +150,7 @@ body{
     margin-left: 5px;
 }
 .support-help-a1{
-    margin: 2px 12px 2px 0;
+    margin-right: 12px;
     /* text-align: none; */
 }
 .support-help-a2{
@@ -157,12 +158,13 @@ body{
 }
 .web-navigation{
     position: absolute;
+    z-index: 1;
     right: 0;
     border: 1px solid #000;
     width: 1198px;
     height: 110px;
     padding: 25px 0;
-    display: none;
+    /* display: none; */
 }
 .navigation{
     position: relative;
@@ -170,4 +172,8 @@ body{
 .web-navigation-item{
     float: left;
     padding-left: 30px;
+}
+.web-navigation-hot h3{
+    color: #f78d3c;
+    font-weight: 100;
 }
