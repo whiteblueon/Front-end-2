@@ -18,11 +18,18 @@ body{
     width: 1286px;
     margin: 0 auto;
 }
+.sn-login-info{
+    float: left;
+    height: 32px;
+    width: 300px;
+}
 .sep{
+    width: 0.5px;
     height: 16px;
     border: 0.1px solid #ccc;
     float: left;
     margin-top: 9px;
+    
 }
 .site-nav{
     background: #f2f2f2;
@@ -50,16 +57,12 @@ body{
     float: left;
     height: 32px;
     line-height: 32px;
-    padding: 0;
     text-align: center;
     width: 70px;
 }
 .sn-quick-a{
     color: #999;
     font-size: 12px;
-    display: block;
-    width: 100%;
-    height: 100%;
 }
 .iconfont{
     color: #FF0036;
@@ -67,6 +70,14 @@ body{
 }
 .sn-quick-a:hover{
     color: #FF0036;
+}
+.sn-menu{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.sn-menu:hover{
+    background: #fff;
 }
 .menu-bd{
     border: 1px solid #eee;
