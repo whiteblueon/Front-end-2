@@ -146,3 +146,18 @@ body{
     margin: 2px 12px 2px 0;
     /* text-align: none; */
 }
+#web-navigation{
+    position: absolute;
+    right: 0;
+    border: 1px solid #000;
+    width: 1198px;
+    height: 110px;
+    padding: 25px 0;
+}
+#navigation{
+    position: relative;
+}
+.web-navigation-item{
+    float: left;
+    padding-left: 30px;
+}
