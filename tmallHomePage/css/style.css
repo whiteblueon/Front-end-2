@@ -80,11 +80,14 @@ body{
     background: #fff;
     text-decoration: underline;
 }
+.sn-web:hover{
+    text-decoration: none;
+}
 .menu-bd{
     border: 1px solid #eee;
     border-top: 0;
     padding: 8px 1px;
-    /* display: none; */
+    display: none;
     width: 90px;
 }
 .quick-menu-item:hover .menu-bd{
@@ -159,11 +162,12 @@ body{
     position: absolute;
     z-index: 1;
     right: 0;
-    border: 1px solid #000;
+    border:solid #eee;
+    border-width: 0 1px 1px;
     width: 1198px;
     height: 110px;
     padding: 25px 0;
-    /* display: none; */
+    display: none;
 }
 .navigation{
     position: relative;
@@ -214,6 +218,19 @@ body{
 }
 .navigation-hot-item a,.navigation-market-item a,.navigation-help-item a{
     font-size: 12px;
+    color: #666;
+}
+.navigation-hot-item a:hover{
+    color: #f78d3c;
+    text-decoration: underline;
+}
+.navigation-market-item a:hover{
+    color: #9cbaec;
+    text-decoration: underline;
+}
+.navigation-help-item a:hover{
+    color: #8f8f8f;
+    text-decoration: underline;
 }
 .web-navigation-help{
     float: left;
