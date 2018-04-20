@@ -142,7 +142,6 @@ body{
 .business-support-help h4{
     /* float: left; */
     margin-left: 5px;
- 
     display: inline-block;
 }
 .business-support-help div{
@@ -170,10 +169,29 @@ body{
     position: relative;
 }
 .web-navigation-item{
-    float: left;
-    padding-left: 30px;
+    clear: both;
+    
+    width: 475px;
+    height: 80px;
+    margin: 0 30px;
 }
-.web-navigation-hot h3{
+.hot-h3{
+    float: left;
+    display: block;
     color: #f78d3c;
     font-weight: 100;
+    margin: 0 30px;
 }
+.navigation-hot-item{
+    float: left;
+    width: 95px;
+    height: 16px;
+    line-height: 16px;
+    padding: 6px 0;
+    text-align: left;
+}
+.navigation-hot-item a{
+    font-size: 12px;
+}
+
+
