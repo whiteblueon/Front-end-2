@@ -21,6 +21,19 @@
     document.write('num1=' + num1 +'num2=' + num2 ,'最大的为' + result);
 </script> -->
 
+<!-- 3.2 错了 year换成数 不对 不换 console里也显示错误 -->
+<script>
+    function getLeapYear(year){
+        if ((year % 4==0 && year % 100 != 0) || year % 400 == 0){
+            return true; 
+        }
+        return false;
+    }
+    var now = new Date();
+    var year = now.getFullYear();
+    var isLeapYear = getLeapYear(year);
+    document.write(year + '年' + (isLeapYear ?'是':'不是') + '闰年')
+</script>
 
 </body>
 </html>
