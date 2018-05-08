@@ -22,7 +22,7 @@
 </script> -->
 
 <!-- 3.2 错了 year换成数 不对 不换 console里也显示错误 -->
-<script>
+<!-- <script>
     function getLeapYear(year){
         if ((year % 4==0 && year % 100 != 0) || year % 400 == 0){
             return true; 
@@ -33,8 +33,32 @@
     var year = now.getFullYear();
     var isLeapYear = getLeapYear(year);
     document.write(year + '年' + (isLeapYear ?'是':'不是') + '闰年')
+</script> -->
+<!-- 4.3.1 -->
+<!-- 1.编写程序．通过用户输入的年龄判断是哪个年龄段的人（儿童：年龄＜14；
+青少年：14<=年龄＜24；青年：24<年龄＜40; 中年：40＜=年龄＜60; 老年：年龄>=60），并在页面上输出判断结果。 -->
+<script>
+    function getold(old){
+        var old;
+        switch (old) {
+            case old>60 :
+                alert ("老年");
+                break;
+            case old<60 && old>=40 :
+                alert ("中年");
+                break;
+            case old<40 && old>=24 :
+                alert ("青年");
+            case old<24 && old>=14 :
+                alert ("青少年");
+            case old<14 :
+                alert ("儿童");
+        }
+    }
+    var yearsold = window.prompt("请输入年龄","18");
+    var add = getold(yearsold);
+    alert('该年龄为' + add);   
 </script>
-
 </body>
 </html>
 
