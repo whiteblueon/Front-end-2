@@ -38,25 +38,9 @@
 <!-- 1.编写程序．通过用户输入的年龄判断是哪个年龄段的人（儿童：年龄＜14；
 青少年：14<=年龄＜24；青年：24<年龄＜40; 中年：40＜=年龄＜60; 老年：年龄>=60），并在页面上输出判断结果。 -->
 <script>
-    function getold(old){
-        // switch (old) {
-        //     case old>60 :
-        //         alert ("老年");
-        //         break;
-        //     case old<60 && old>=40 :
-        //         alert ("中年");
-        //         break;
-        //     case old<40 && old>=24 :
-        //         alert ("青年");
-        //         break;
-        //     case old<24 && old>=14 :
-        //         alert ("青少年");
-        //         break;
-        //     case old<14 :
-        //         alert ("儿童");
-        //         break;
-        // }
+    function getold(old){      
         old*= 1;
+        // 怎么不写全局变量
         if(old>=60) {
             return ("老年");
         }else if(old<60 && old>=40){
