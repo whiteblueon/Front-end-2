@@ -30,14 +30,14 @@
                 return num*fac(num-1);
             }
             console.log(fac(10));
-            function sum(x){
-                var sum1=0;
-                for(var i=1;i<=x;i++){
-                    sum1 += fac(i);
+            function sum(){
+                var sum=0  ;
+                for(var i= 1 ; i<=10 ; i++){
+                    sum+=fac(i);
                 }
-                return sum1;
+                return sum;
             }
-            console.log(sum(10));
+            console.log(sum());
     </script>
 </body>
 </html>
