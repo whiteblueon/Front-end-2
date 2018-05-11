@@ -10,11 +10,24 @@
     
 
 
-    <script>
+    <!-- <script>
         function naa(nab){
             for(var i = 1; i<=nab;i++){
                 for(var j = 1; j <= i; j++){
                     document.write(j+'&nbsp;');
+                }document.write('<br/>');
+            }
+        }
+        naa(5)
+    </script> -->
+    <script>
+        function naa(nab){
+            for(var i = 1; i<=nab;i++){
+                for(var k = 1; k<=(nab-i); k++){
+                    document.write('&nbsp')
+                }
+                for(var j = 1; j <= i; j++){
+                    document.write('*'+'&nbsp;');
                 }document.write('<br/>');
             }
         }
