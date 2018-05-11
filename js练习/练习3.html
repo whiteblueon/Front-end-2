@@ -10,7 +10,7 @@
     
 
 
-    <script>
+    <!-- <script>
         function getfactorial(){
             var x = 1;
             for(i=1; i<11 ; i++){               
@@ -21,6 +21,23 @@
         var factorial;
         factorial = getfactorial();
         console.log(factorial);
+    </script> -->
+    <script>
+            function fac(num){
+                if(num==1){
+                    return 1;
+                }
+                return num*fac(num-1);
+            }
+            console.log(fac(10));
+            function sum(x){
+                var sum1=0;
+                for(var i=1;i<=x;i++){
+                    sum1 += fac(i);
+                }
+                return sum1;
+            }
+            console.log(sum(10));
     </script>
 </body>
 </html>
