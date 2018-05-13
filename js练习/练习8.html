@@ -12,34 +12,58 @@
         编写一个判断某个非负整数是否能够同时被3,5,7整除的函数，
         然后在页面上输出1~1000之间所有能同时被3,5,7整除的整数，并要求每行显示6个这样的数。 -->
     <!-- <script>
-        function getnum(){
-            for(var i=1;i<=1000;i++){
+        
+        function getnum(x){
                 if(i%3==0 && i%5==0 && i%7==0){
-                    document.write(i+'&nbsp;');
-                    if(i/105==6){
-                        document.write('<br\>');
+                    return true ;                 
                     }
-                }               
+                    return false;
+                }                                  
+        var foo = new  Array();
+        for(var i=1;i<=1000;i++){
+            if (getnum(i)){
+                foo.push(i);
+            }
+                     
+        }
+        
+        for(var p in foo){
+            document.write( foo[p]+'&nbsp;')
+            p*=1;
+            if((p+1)%6==0){
+                document.write('</br>')
             }
         }
-        getnum();
+        
         
 
     </script> -->
 
     <!-- 4.在页面上编程输出100~1000之间的所有素数，并要求每行显示6个素数。 -->
     <script>
-        function getnum(){
-            for(var i = 100; i<=1000; i++){
-                for(x = 1;x<i-1; x++){                   
-                        if (i%x==0){}
-                        else{
-                                                 
-                    }
-                }
+        function getnum(i){   
+            var naa=true;       //标志位
+                for(var x = 2;x<=Math.sqrt(i); x++){                   
+                        if (i%x==0){
+                            naa=false;
+                            break;                           
+                        }else{ 
+                             naa=true;                                            
+                     }
+                }return naa            
+        }
+        var foo = new Array();
+        for(var i = 100; i<=1000; i++){
+            if(getnum(i)){
+                foo.push(i);
             }
         }
-        getnum();
+        for (var p in foo){
+            document.write(foo[p]+'&nbsp');            
+            if((parseInt(p)+1)%6==0){
+                document.write('</br>')
+            }
+        }
     </script>
 </body>
 </html>
