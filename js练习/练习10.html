@@ -30,22 +30,24 @@
     每次由计算机随机产生3个1-9之间(包括1和9）的随机数，
     当这3个随机数中有一个数字为8时，就算赢了一次，要求利用函数计算获胜率。 -->
     <script>
-        function foo (x,y,z){
-            var x = Math.floor(Math.random()*8)+1;
-            var y = Math.floor(Math.random()*8)+1;
-            var z = Math.floor(Math.random()*8)+1;
-            var naa = true;
-            if(x==8|| y==8 || z==8){
-                 naa = true;
-            }else{
-                 naa = false;
+        function foo (n){
+            var arr=new Array()
+            var i=0;
+            arr[1]=n;
+            for(var j=1;j<=n;j++){
+                var x = Math.floor(Math.random()*8)+1;
+                var y = Math.floor(Math.random()*8)+1;
+                var z = Math.floor(Math.random()*8)+1;                              
+                if(x==8|| y==8 || z==8){
+                    arr[0]=++i;
+                }else{
+                    arr[0]=i;
+                }               
             }
-            return naa;
+            return arr[0]/arr[1];
         }
-    if(naa){
-        var i++;
-    }
-        var arr=new Array()
+        document.write(foo(1000000));
+        
     </script>
 </body>
 </html>
