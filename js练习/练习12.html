@@ -9,11 +9,26 @@
 <body>
     
 
+
+<!-- 
+    编制一个从字符串中收集数字字符（"0"',"1"，…"9"）的函数CollectDigits(s)，
+    它从字符串s中顺序取出数字，并且合并为一个独立的字符串作为函数的返回值。
+    例如函数调用CollectDigits("1abc23def4"）的返回值是字符串"1234"。 -->
     <script>
-        function foo (x,y) {
-          
+        function CollectDigits(s){
+            var arr = Array();
+            var ara = Array(); 
+            arr= s.split('');
+            for (var p in arr){              
+                if (isNaN( parseInt(arr[p]))){
+                    continue;
+                }else{
+                    ara.push(arr[p]);
+                }
+            }
+        return ara.join('');
         }
-        foo(1,2,3)
+        document.write( CollectDigits('a1d2sd3fg4h56f1f'))
     </script>
 </body>
 </html>
