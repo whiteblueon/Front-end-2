@@ -36,28 +36,42 @@
     例如Merge("123","abc"）的返回结果是"1a2b3c"，如果两个字符串的长度不同，
     那么就将多余部分直接合并到结果字符串的末尾，如Merge("123456",''abc''）的返回结果是”1a2b3c456”。 -->
 
+    <!-- 1  a  2  b  3   c   4  5  6
+    0  0  1  1  2   2   3  4  5
+    0  1  2  3  4   5 -->
     <script>
         function Merge(x,y){
             var arr = new Array();
             var ara = new Array();
             var arb = new Array();
             ara= x.split('');
-            arb= y.spiit('');
+            arb= y.split('');
             var len1=ara.length;
             var len2=arb.length;
             var len3;
+            var len4 = len1 + len2;
             if(len1>=len2){
                 len3=len2;
             }else{
-                len3=len2-1;
+                len3=len1;
             }
-            for(var i=0;i<=2*len3+1;i++){
+            for(var i=0;i<=2*len3-1;i++){
                 if(i%2==0){
-                    arr.push(ara[])
+                    arr.push(ara[i/2])
+                }else{
+                    arr.push(arb[(i-1)/2])
                 }
             }
-            
+            for(var j = 2*len3;j<=len4-1; j++){
+                if(len1>len2){
+                    arr.push(ara[j-len3]);
+                }else{
+                    arr.push(arb[j-len3]);
+                }
+            }
+            return arr.join('');
         }
+        document.write(Merge("123456","abc"));
     </script>
 </body>
 </html>
